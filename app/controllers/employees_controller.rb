@@ -14,6 +14,7 @@ class EmployeesController < ApplicationController
 
     def create
         @employee = Employee.create(employee_params)
+        redirect_to employees_path
     end
 
     def new
